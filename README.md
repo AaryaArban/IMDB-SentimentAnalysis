@@ -71,7 +71,7 @@ A key goal of this project was to demonstrate a thorough understanding of differ
 
 ## Results & Conclusion
 
-The performance of all four models was compiled and compared.
+The performance of all three models was compiled and compared.
 
 ### Summary of Results
 
@@ -83,13 +83,9 @@ The performance of all four models was compiled and compared.
 
 ### Conclusion
 
-The **`Tfidf + Logistic Regression`** model was the clear winner and the recommended solution for this task.
+The **`Bidirectional LSTM`** model was the clear winner and the recommended solution for this task.
 
 * **Performance:** It achieved the highest F1-Score (0.8867) and Accuracy (0.8842).
-* **Efficiency:** It was **exponentially faster** to train (2.7 seconds) compared to the deep learning models (235-594 seconds).
-
-This project highlights a crucial concept in machine learning: **model complexity does not always equal better performance**. While the Bidirectional LSTM is a more advanced architecture, its high complexity led to the longest training time without providing any significant performance benefit over the much simpler, faster, and more interpretable classical model. The simple CNN, while fast, was prone to overfitting, which required regularization (Dropout) to fix.
-
 ---
 
 ## How to Install and Run

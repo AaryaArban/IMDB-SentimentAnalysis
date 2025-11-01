@@ -57,14 +57,10 @@ A key goal of this project was to demonstrate a thorough understanding of differ
 * **Technique:** A simple 1D Convolutional Neural Network (CNN) is built. CNNs are effective for text as they act as pattern detectors, identifying key n-grams (phrases) that are strong indicators of sentiment.
 * **Analysis:** This model was intentionally trained without regularization. The resulting accuracy/loss plot clearly shows the training accuracy reaching ~100% while validation accuracy stalls, and validation loss begins to *increase*—a classic sign of the model memorizing the training data instead of learning to generalize.
 
-![Original CNN Overfitting Plot](cnn_overfit_accuracy_loss.png)
-
 ### 2. Improved CNN (with Dropout)
 * **Purpose:** To demonstrate the *solution* to overfitting using regularization.
 * **Technique:** This model uses the *same architecture* as the original CNN but adds a **`Dropout(0.5)`** layer. Dropout randomly deactivates 50% of the neurons during each training step, forcing the model to learn more robust and redundant features.
 * **Analysis:** The history plot for this model shows the training and validation lines tracking each other closely. This proves that dropout was highly effective in mitigating overfitting, leading to a model that generalizes better to unseen data.
-
-![Improved CNN History Plot](improved_cnn_accuracy_loss.png)
 
 ### 3. Bidirectional LSTM
 * **Purpose:** To explore a more advanced architecture specifically designed for sequential data.
@@ -84,14 +80,6 @@ The performance of all four models was compiled and compared.
 | Original CNN | 0.8557 | 185.30 | 0.8555 |
 | Improved CNN | 0.8516 | 235.78 | 0.8520 |
 | Bidirectional LSTM | 0.8556 | 594.61 | 0.8570 |
-
-### Comparison Plots
-
-These charts visualize the trade-offs between the models.
-
-![F1-Score Comparison](f1_score_comparison.png)
-![Accuracy Comparison](accuracy_comparison.png)
-![Training Time Comparison](training_time_comparison.png)
 
 ### Conclusion
 

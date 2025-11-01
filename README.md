@@ -79,13 +79,13 @@ The performance of all three models was compiled and compared.
 |:---|---:|---:|---:|
 | Original CNN | 0.8557 | 185.30 | 0.8555 |
 | Improved CNN | 0.8516 | 235.78 | 0.8520 |
-| Bidirectional LSTM | 0.8556 | 594.61 | 0.8570 |
+| Bidirectional LSTM | 0.8557 | 594.61 | 0.8570 |
 
 ### Conclusion
 
 The **`Bidirectional LSTM`** model was the clear winner and the recommended solution for this task.
 
-* **Performance:** It achieved the highest F1-Score (0.8867) and Accuracy (0.8842).
+* **Performance:** It achieved the highest F1-Score (0.8557) and Accuracy (0.8570).
 ---
 
 ## How to Install and Run

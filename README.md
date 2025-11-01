@@ -7,9 +7,9 @@
 
 ## Project Overview
 
-This project is a comprehensive study for the **AIDS 2 Lab**, conducting sentiment analysis on the IMDB Movie Review dataset. The primary goal is to compare the performance, efficiency, and practical trade-offs of classical machine learning techniques versus various deep learning architectures for a binary text classification task.
+This project is a comprehensive study for the **AIDS 2 Lab**, conducting sentiment analysis on the IMDB Movie Review dataset. The primary goal is to compare the performance, efficiency, and practical trade-offs of various deep learning architectures for a binary text classification task.
 
-We build and evaluate four distinct models:
+We build and evaluate three distinct models:
 1.  **Simple Deep Learning:** A simple 1D Convolutional Neural Network (CNN)
 2.  **Regularized Deep Learning:** An improved 1D CNN with Dropout (to address overfitting)
 3.  **Sequential Deep Learning:** A Bidirectional Long Short-Term Memory (LSTM) network
